@@ -9,8 +9,11 @@ router.get("/addUser", services.addUserRoute);
 
 router.get("/updateUser", services.updateUserRoute);
 
-// api Router
-router.post("/api/adduser", controller.adduser);
-router.get("/api/getusers", controller.getusers);
+// api
+
+router.post("/api/users", controller.create);
+router.get("/api/users", controller.find);
+router.put("/api/users/:id", controller.update);
+router.delete("/api/users/:id", controller.delete);
 
 module.exports = router;

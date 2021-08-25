@@ -14,8 +14,8 @@ const userSchema = new mongoose.Schema({
     },
   },
   phone: Number,
-  address: String,
   gender: String,
+  address: String,
   status: String,
 });
 
