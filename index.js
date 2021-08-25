@@ -10,6 +10,7 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
 app.use(morgan("tiny"));
+app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "./templates/views"));
