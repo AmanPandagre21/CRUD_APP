@@ -4,6 +4,7 @@ const path = require("path");
 const morgan = require("morgan");
 const app = express();
 require("./src/db/conn");
+require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
 
