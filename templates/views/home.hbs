@@ -1,0 +1,46 @@
+{{>header}}
+
+<header>
+    <div class="nav_div">
+        <h1>CRUD APP</h1>
+    </div>
+</header>
+
+<div class="man_div">
+    <div class="container">
+        <div class="add_btn">
+            <a href="/addUser" class="btn btn-outline-warning">Add User</a>
+        </div>
+        <div class="user_table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mail</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aman Pandagre</td>
+                        <td>aman@gmail.com</td>
+                        <td>8778787878</td>
+                        <td>6, New durga nagar</td>
+                        <td>Male</td>
+                        <td>Active</td>
+                        <td colspan="2">
+                            <a href="/updateUser" class="btn btn-outline-success">Edit</a>
+                            <a href="" class="btn btn-outline-danger">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{{>footer}}
