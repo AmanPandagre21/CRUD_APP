@@ -15,7 +15,7 @@ exports.create = async (req, res) => {
       });
 
       const result = await userData.save();
-      res.send(result);
+      res.redirect("/");
     }
   } catch (error) {
     res

@@ -25,18 +25,20 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {{#each users}}
                     <tr>
-                        <td>Aman Pandagre</td>
-                        <td>aman@gmail.com</td>
-                        <td>8778787878</td>
-                        <td>6, New durga nagar</td>
-                        <td>Male</td>
-                        <td>Active</td>
+                        <td>{{this.name}}</td>
+                        <td>{{this.email}}</td>
+                        <td>{{this.phone}}</td>
+                        <td>{{this.address}}</td>
+                        <td>{{this.gender}}</td>
+                        <td>{{this.status}}</td>
                         <td colspan="2">
-                            <a href="/updateUser" class="btn btn-outline-success">Edit</a>
-                            <a href="" class="btn btn-outline-danger">Delete</a>
+                            <a href="/updateUser?id={{this._id}}" class="btn btn-outline-success">Edit</a>
+                            <button data={{this._id}} class="btn btn-outline-danger delete">Delete</button>
                         </td>
                     </tr>
+                    {{/each}}
                 </tbody>
             </table>
         </div>
